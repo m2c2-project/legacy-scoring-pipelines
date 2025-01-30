@@ -2,6 +2,8 @@
 
 This R script processes cognitive task data from M2C2, from the Survey Dolphin era, including reading, scoring, summarizing, validating, and exporting results. It ensures efficient and reproducible analysis of cognitive performance data.
 
+This repository is the 'best-of' [a prior repository with a similar goal](https://github.com/m2c2-project/m2c2_data_pipelines).
+
 ---
 
 ## 📌 Features
