@@ -81,6 +81,7 @@ print(files_in_zip)
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 # STEP 3: IDENTIFY COGNITIVE TASK FILES ----
+# This would the prefix in the `data` folder
 fn_cogtask_dotmemory <- files_in_zip[grepl("Dot-Memory_", files_in_zip)]
 fn_cogtask_symbolsearch <- files_in_zip[grepl("Symbol-Search_", files_in_zip)]
 
@@ -89,6 +90,8 @@ fn_cogtask_symbolsearch <- files_in_zip[grepl("Symbol-Search_", files_in_zip)]
 # STEP 4: READ RAW COGNITIVE DATA ----
 raw_cogtask_dotmemory <- read_cog_data(fn_cogtask_dotmemory)
 raw_cogtask_symbolsearch <- read_cog_data(fn_cogtask_symbolsearch)
+
+# chop ghost cols
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
